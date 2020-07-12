@@ -1,0 +1,14 @@
+language: node_js
+
+install:
+  - npm install
+script:
+  - npm run docs #generates the documentation for the project
+deploy:
+  local_dir: ./docs
+  provider: pages
+  skip_cleanup: true
+  github_token: $SECRET_TOKEN
+  keep_history: true
+  on:
+    branch: master

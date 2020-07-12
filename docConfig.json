@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "plugins/markdown",
+    "plugins/summarize"
+  ],
+  "source": {
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "templates": {
+    "default": {
+        "outputSourceFiles": false
+    }
+  }
+}

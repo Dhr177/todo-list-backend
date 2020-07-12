@@ -1,0 +1,38 @@
+{
+  "name": "todo-list-backend",
+  "version": "1.0.0",
+  "description": "backend for todo list project",
+  "main": "src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jsdoc": "^3.6.4",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./**.js",
+    "docs": "jsdoc -r ./src/ -c docConfig.json -R README.md -d ./docs/",
+    "dev" : "nodemon",
+    "start": "node ./src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhr177/todo-list-backend.git"
+  },
+  "keywords": [
+    "todo",
+    "list"
+  ],
+  "author": "Dhruv Gaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhr177/todo-list-backend/issues"
+  },
+  "homepage": "https://github.com/Dhr177/todo-list-backend#readme"
+}
